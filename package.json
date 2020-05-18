@@ -1,6 +1,6 @@
 {
   "name": "pouchdb-sync-to-anything",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Use PouchDB's sequences and checkpoints to sync to something that's not CouchDB",
   "repository": "https://github.com/karlwestin/pouchdb-sync-to-anything",
   "main": "index.js",
