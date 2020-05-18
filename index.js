@@ -125,7 +125,7 @@ function sync (syncer, opts) {
     return db.allDocs({ include_docs: true, keys: ids })
       .then(function (res) {
         return res.rows.map(function (item) {
-          return item.doc
+          return item.doc ? item.doc : {_id: item.id, _rev: item.value.rev, _deleted: item.value.deleted}
         })
       })
   }
